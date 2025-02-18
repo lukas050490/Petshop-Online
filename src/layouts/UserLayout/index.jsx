@@ -1,18 +1,18 @@
 import { Outlet } from "react-router-dom"
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
-
+import {Container} from "./styles"
 
 function UserLayout() {
 
   return (
-    <div style={{ display: "flex", flexDirection: "column", minHeight: "300vh" }}>
+    <Container>
       <Header />
-      <main style={{ flex: 1 }}>
+      <main>
         <Outlet />
       </main>
       <Footer />
-    </div>
+    </Container>
   )
 }
 

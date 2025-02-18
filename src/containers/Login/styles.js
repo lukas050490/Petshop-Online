@@ -57,6 +57,7 @@ export const RightContainer = styled.div`
   height: 100%;
   width: 100%;
   max-width: 50%;
+  padding-left: 10px;
 
   @media (max-width: 870px) {
    padding: 16px;

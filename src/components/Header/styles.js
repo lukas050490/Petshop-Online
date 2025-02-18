@@ -15,7 +15,8 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  
+ 
 
 `
 export const Img = styled.img`
@@ -26,6 +27,11 @@ export const Img = styled.img`
     @media (max-width: 500px){
       width: 50px;
       height: 50px;
+      margin-left: 50px;
+    }
+
+    @media(max-width: 430px){
+      margin-left: 10px;
     }
 
 `
@@ -37,7 +43,12 @@ export const Content = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
+  @media(max-width:430px) {
+    justify-content: space-around;
 
+    gap: 10px;
+  }
 `
 
 export const Navigation = styled.nav`
@@ -52,6 +63,19 @@ export const Navigation = styled.nav`
     justify-content: center;
     align-items: center;
     gap: 20px;
+
+    @media(max-width: 430px){
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-left: 10px;
+      gap: 5px;
+
+      div{
+        gap:5px;
+      }
+    }
   }
 `
 
@@ -64,6 +88,10 @@ export const HeaderLink = styled(Link)`
   &:hover {
     color: green;
   }
+
+  @media(max-width:430px) {
+    font-size: 20px;
+  }
 `
 
 export const Options = styled.div`
@@ -71,6 +99,10 @@ export const Options = styled.div`
   align-items: center;
   justify-content: center;
   gap: 48px;
+
+  @media(max-width: 430px) {
+    gap: 10px;
+  }
 `
 
 export const Profile = styled.div`
@@ -94,12 +126,32 @@ export const Profile = styled.div`
      
     }
   }
+
+  @media(max-width: 430px){
+    display: flex;
+    align-itens: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 18px;
+
+    div {
+      margin-top: 0;
+    }
+
+  }
+
 `
 
 export const LinkContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 10px;
+
+  @media(max-width: 430px){
+    display: flex;
+    flex-direction: column;
+   }
 `
 
 export const Logout = styled.button`
@@ -109,4 +161,8 @@ export const Logout = styled.button`
   font-size: 20px;
   background-color: transparent;
   border: none;
+
+  @media(max-width: 430px) {
+    font-size: 16px;
+  }
 `

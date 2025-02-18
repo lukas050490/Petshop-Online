@@ -7,6 +7,8 @@ export const Container = styled.div`
   background-color: green;
   width: 100vw;
 
+  
+  
 
   display: flex;
   align-items: center;
@@ -16,5 +18,11 @@ export const Container = styled.div`
     color: #fff;
     font-size: 16px;
     font-weight: lighter;
+  }
+
+  @media(max-width:360px){
+    p {
+      font-size: 14px;
+    }
   }
 `

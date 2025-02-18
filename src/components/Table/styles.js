@@ -5,6 +5,9 @@ export const Root = styled.table`
   border-collapse: collapse;
   background-color: #fff;
   border-radius: 20px;
+  
+  
+
 `
 
 export const Header = styled.thead``
@@ -25,6 +28,10 @@ export const Th = styled.th`
   &:first-child {
     border-top-left-radius: 20px;
   }
+
+  @media(max-width:430px){
+    max-width:120px;
+  }
 `
 
 export const Td = styled.td`
@@ -32,6 +39,12 @@ export const Td = styled.td`
   color: #484848;
   font-weight: 500;
   line-height: 115%;
+
+  @media(max-width:430px){
+    padding: 14px;
+  }
 `
 
-export const Body = styled.tbody``
+export const Body = styled.tbody`
+   
+`

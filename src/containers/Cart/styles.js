@@ -9,7 +9,11 @@ export const Container = styled.div`
       rgba(255,255,255,0.5)
     ),
   url('${BackgroundDown}');
-  min-height: 100vh;
+  min-height: 100%;
+
+  @media(max-width:1024px){
+    height: 100%;
+  }
 `
 
 export const Banner = styled.div`
@@ -18,11 +22,11 @@ export const Banner = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
-  height: 200px;
+  height: 500px;
 
   img {
-    height: 180px;
-    width: 180px;
+    height: 350px;
+    width: 350px;
     border-radius: 50%;
   }
 `
@@ -55,4 +59,17 @@ export const Content = styled.div`
   padding: 40px;
   margin: 0 auto;
   gap: 40px;
+
+  @media(max-width:820px){
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media(max-width: 430px) {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    width: 100%;
+    padding: 0;
+  }
 `

@@ -18,8 +18,15 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    
 
+    @media(max-width: 1024px) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    
+    
+   
     
   }
 
@@ -61,7 +68,9 @@ export const ContainerItems = styled.div`
   height: 300px;
   border-radius: 20px;
 
-
+  @media(max-width: 430px) {
+    height: 250px;
+  }
 `
 
 export const CategoryButton = styled(Link)`
@@ -79,5 +88,14 @@ export const CategoryButton = styled(Link)`
   &:hover {
     background-color: green;
     opacity: 0.5;
+  }
+
+  @media(max-width: 430px){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    font-size: 18px;
+    padding: 10px 10px;
   }
 `

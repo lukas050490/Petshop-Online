@@ -6,6 +6,11 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  @media(max-width: 430px){
+      height: 100%;
+      gap: 10px;
+    }
 `
 
 export const ContainerItems = styled.div`
@@ -38,6 +43,11 @@ export const ContainerPrice = styled.div`
     margin-top: 10px;
     bottom: 5px;
     color:  #edb62b;
+
+    @media(max-width: 430px){
+      font-size: 18px;
+      white-space: nowrap;
+    }
   }
 
   strong {

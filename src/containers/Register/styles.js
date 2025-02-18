@@ -56,6 +56,7 @@ export const RightContainer = styled.div`
   height: 100%;
   width: 100%;
   max-width: 50%;
+  padding: 30px 0;
 
   @media (max-width: 870px) {
    padding: 16px;
@@ -71,6 +72,7 @@ export const Title = styled.h2`
   font-size: 40px;
   font-weight: bold;
   color: #ffffff;
+  
 
 
   @media (max-width: 870px) {
@@ -82,7 +84,7 @@ export const Title = styled.h2`
 export const FormContainer = styled.div`
  display: flex;
  flex-direction: column;
- gap: 20px;
+ gap: 10px;
  padding: 20px;
  width: 100%;
  max-width: 400px;
@@ -92,7 +94,7 @@ export const FormContainer = styled.div`
    color: #ffffff;
    font-size: 20px;
    font-weight: 800;
-   margin-top: 20px;
+   margin-top: 15px;
   }
 
 
@@ -102,7 +104,7 @@ export const InputForm = styled.div`
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
   label{
    color: #ffffff;
